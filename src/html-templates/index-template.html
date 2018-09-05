@@ -6,12 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wiki Viewer</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto" rel="stylesheet">
 </head>
 
 <body>
-  <h1 class="test">
-    Hello, index-template.html!
-  </h1>
+  <div class="large-hero" id="largeHero">
+    <div class="wrapper wrapper--top">
+      <h1 class="large-hero__title">Wikipedia Viewer</h1>
+      <div class="large-hero__container">
+        <div class="large-hero__img" id="wikiImg">
+          <img src="../img/Wikipedia_Administrator.png" class="">
+        </div>
+        <div class="large-hero__search-bar">
+          <input type="text" name="search" id="searchHome" placeholder="Type your Wikipedia search here..." onfocus="this.value=''">
+        </div>
+        <div class="large-hero__buttons">
+          <a id="submitBtn" class="btn btn--red submit">Submit</a>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn">Random Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of first Page-->
+  <div id="resultsPage" class="results-page hidden">
+    <div class="wrapper wrapper--top wrapper--no-wrapper-until-small">
+      <div class="results-page__header">
+        <span id="homeBtn" class="results-page__home-btn">Home</span>
+        <span class="results-page__search-bar">
+          <input name="search" id="searchResults" placeholder="Type your Wikipedia search here..." onfocus="this.value=''">
+        </span>
+        <span class="results-page__submit-btn submit">Submit</span>
+      </div>
+      <div class="results-page__return">
+        <div class="return-items wrapper wrapper--top wrapper--small">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

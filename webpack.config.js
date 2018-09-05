@@ -61,6 +61,7 @@ module.exports = {
       }
     ]
   },
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Default",

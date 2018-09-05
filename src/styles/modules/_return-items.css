@@ -1,0 +1,22 @@
+.return-items {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &__entry {
+    margin-bottom: 25px;
+
+    div {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__metadata {
+    color: green;
+  }
+}
+
+@mixin atSmall {
+  .return-items {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

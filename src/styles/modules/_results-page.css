@@ -1,0 +1,77 @@
+.results-page {
+  &__header {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px 5px 0 0;
+    color: white;
+  }
+
+  &__home-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      color: $red;
+    }
+  }
+
+  &__search-bar {
+    input {
+      width: 66%;
+      padding: 5px;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  &__submit-btn {
+    background-color: $red;
+    padding: 6.5px 5px;
+    margin-left: -4px;
+    border-radius: 0 5px 5px 0;
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 1.2em;
+    }
+  }
+
+  @mixin atSmall {
+    &__home-btn {
+      display: inline-block;
+      cursor: pointer;
+      padding-right: 20px;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        color: $red;
+      }
+    }
+
+    &__search-bar {
+      input {
+        width: 300px;
+        padding: 5px;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+
+    &__submit-btn {
+      background-color: $red;
+      padding: 6.5px 5px;
+      margin-left: -4px;
+      border-radius: 0 5px 5px 0;
+      transition: 0.2s ease-in-out all;
+      cursor: pointer;
+
+      &:hover {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

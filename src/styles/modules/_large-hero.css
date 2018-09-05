@@ -1,0 +1,36 @@
+.large-hero {
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 4rem;
+  }
+
+  &__container {
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+
+  &__img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__search-bar {
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 70%;
+    min-width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: $offWhite;
+  }
+
+  &__buttons {
+    padding-bottom: 30px;
+  }
+}

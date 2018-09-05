@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: $offWhite;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 0 3px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $offWhite;
+  color: black;
+  border: solid grey 1px;
+  transition: all ease-in-out 0.2s;
+  //transform: scale(1.2);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &--red {
+    background-color: $red;
+    color: white;
+    border: white;
+  }
+}
+
+.hidden {
+  position: absolute;
+  left: -99999999px;
+}
